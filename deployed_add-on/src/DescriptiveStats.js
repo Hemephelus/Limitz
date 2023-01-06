@@ -8,7 +8,7 @@
  * @customfunction
  */
 
-function StatsSummary(DataSet, HeaderRow) {
+function DescriptiveStatistics(DataSet, HeaderRow) {
   let DataArray;
    let Summary = {
      Title: ["Title"],

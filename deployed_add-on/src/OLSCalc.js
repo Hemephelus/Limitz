@@ -11,7 +11,7 @@
  */
 
 
-function MULTREG(Array, Depdt_Var_Col_Num) {
+function MultipleLinearRegression(Array, Depdt_Var_Col_Num) {
   let arrayColumnY = (Array, Depdt_Var_Col_Num) => Array.map(x => x[Depdt_Var_Col_Num]);
   let TempDeIndpt_Var = arrayColumnY(Array, Depdt_Var_Col_Num)
   let DependentVariable = Transpose_RowToCol([TempDeIndpt_Var])

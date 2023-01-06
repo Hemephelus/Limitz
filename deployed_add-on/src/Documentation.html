@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 16px 16px 32px 16px;
+    }
+
+    footer {
+      background-color: #ffffff;
+      /* color: #25BA96; */
+      display: flex;
+      flex-direction: column ;
+      justify-content: space-between;
+      padding: 8px;
+      font-size: 11px;
+      gap: 8px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    footer>a {
+      color: #25BA96;
+    }
+
+    .homepage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+      gap: 16px;
+    }
+
+    .description {
+      text-align: center;
+    }
+
+    input {
+      font-family: 'Nunito', sans-serif;
+      outline: none;
+      border: none;
+      width: 100%;
+    }
+
+    .searchFunc:hover {
+      border: 1px solid black;
+    }
+
+    .arrow_back {
+      cursor: pointer;
+    }
+
+    .searchFunc {
+      border: 1.5px solid gray;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      color: antiquewhite;
+    }
+
+    .nextpage {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+    }
+
+    .headersection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #List {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    #List li div {
+      /* Prevent double borders */
+      background-color: #329e8485;
+      padding: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      color: black;
+      border-radius: 4px;
+    }
+
+    #List li div:hover:not(.header) {
+      background-color: #329e84;
+      opacity: 90%;
+      cursor: pointer;
+    }
+
+    .viewList {
+      background: #25ba96;
+      color: #eeeeee;
+      font-family: 'Nunito', sans-serif;
+      border-radius: 8px;
+      padding: 8px;
+      border: none;
+    }
+
+    .viewList:hover {
+      background: #25ba97c4;
+      cursor: pointer;
+    }
+
+    .viewList:active {
+      scale: 95%;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    code {
+      color: #329e84;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .codeParagraphstyle {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="homepage" id="homepage">
+    <img src="https://lh3.googleusercontent.com/--NO7xtjXkVQ/Y66l9Hq2o0I/AAAAAAAAADM/3xlceB1Z4tcnzs3pTbo82sak-W0oEB-1gCNcBGAsYHQ/s400/LIMITZ_128.png" alt="Limtz logo" id="LimitzLogo">
+
+    <p class="description">
+      Search for the statistical functions you need
+    </p>
+    <button class="viewList" onclick="showFunctionList()" >
+        View Functions List
+      </button>
+  </div>
+
+  <!-- Next Pages -->
+  <div class="nextpage hide" id="nextpage">
+
+    <!-- header section -->
+    <div class="headersection">
+      <span class="material-symbols-outlined arrow_back" onclick="goBack()">
+arrow_back
+</span>
+      <img src="https://lh3.googleusercontent.com/-jUj6sZYh__o/Y66lCQI3VeI/AAAAAAAAACk/hNuOZQMo5w8DVwoYf_yPoPXFwpxMeqwhgCNcBGAsYHQ/s72-c/LIMITZ_32.png" alt="logo" width="32">
+    </div>
+    <!-- end header section -->
+
+
+    <!-- search section -->
+    <div class="searchFunc">
+      <input
+          type="text"
+          placeholder="Find Function Here..."
+          onkeyup="filterList()"
+          id="myInput"
+        />
+    </div>
+    <!-- end search section -->
+
+
+    <!-- List Page View -->
+    <div class="listpage hide" id="listpage">
+
+
+      <ul id="List">
+        <li>
+          <div>Descriptive Statistics</div>
+        </li>
+<!-- 
+
+
+Replacement Starts From Here
+
+
+ -->
+
+
+
+
+
+<li>
+          <div>Multiple Correlation</div>
+        </li>
+<li>
+          <div>Multiple Linear Regression</div>
+        </li>
+<li>
+          <div>Covariance</div>
+        </li>
+<!-- <li>
+          <div>Exponential Smoothing</div>
+        </li>
+<li>
+          <div>F-Test Two-Sample for Variances</div>
+        </li>
+<li>
+          <div>Fourier Analysis</div>
+        </li>
+<li>
+          <div>Logistic Regression</div>
+        </li>
+<li>
+          <div>Moving Average</div>
+        </li>
+<li>
+          <div>Random Number Generator</div>
+        </li>
+<li>
+          <div>Sampling</div>
+        </li>
+<li>
+          <div>Rank and Percentile</div>
+        </li>
+<li>
+          <div>t-Test Paired Two Sample for Means</div>
+        </li>
+<li>
+          <div>t-Test Two Sample Assuming Unqual Variance</div>
+        </li>
+<li>
+          <div>t-Test Two Sample Assuming Equal Variance</div>
+        </li>
+<li>
+          <div>z-Test Two Sample for Means</div>
+        </li>
+<li>
+          <div>Unit Test</div>
+        </li> -->
+
+
+
+
+        
+
+<!-- 
+
+
+End Replacement Starts From Here
+
+
+ -->
+
+        <!-- Enter New List Items above -->
+
+
+      </ul>
+    </div>
+    <!-- End of List Page View -->
+
+    <!-- Details Page View -->
+    <div class="detailspage hide" id="detailspage">
+
+
+      <!-- Descriptive Statistics custom function documentation. -->
+
+      <div class="currentFunction" id="Descriptive Statistics">
+        <div>
+          <h2>Descriptive Statistics</h2>
+          <p>
+            Returns a summary of a dataset with information like Mean, Median, Standard Deviation, Skewness and so on.
+          </p>
+        </div>
+
+        <div>
+          <h3>Sample Usage </h3>
+          <p class="codeParagraphstyle">
+            <code>DescriptiveStatistics(B2:G42,1)</code>
+            <code>or</code>
+            <code>DescriptiveStatistics(B2:G42,A2)</code>
+          </p>
+        </div>
+        <div>
+          <h3>Syntax</h3>
+          <p><code>DescriptiveStatistics(data,[header])</code></p>
+          <hr>
+
+          <div>
+            <code>data -(Numbers):</code>
+            <p>
+              The range of cells to perform the calculations on.
+            </p>
+          </div>
+
+          <div>
+            <code>header - (Boolean):</code> <span>[OPTIONAL]</span>
+            <p>
+              To confirm if there is a header row type 1. If omitted, the value is guessed based on the content of data.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Examples <a href="https://github.com/Hemephelus/Limitz/tree/main/d\Documentation"
+              target="_blank"><span class="material-symbols-outlined">
+open_in_new
+</span></a></h3>
+          <p>
+            For more comprehensive examples with data checkout out our<a
+              href="https://github.com/Hemephelus/Limitz/tree/main/Documentation"
+              target="_blank">Documentation</a>
+          </p>
+        </div>
+      </div>
+
+
+      <!-- End of Descriptive Statistics custom function documentation. -->
+
+
+
+
+
+
+      <!-- 
+
+
+Replacement Starts From Here
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+     <!-- Multiple Correlation custom function documentation. -->
+
+      <div class="hide" id="Multiple Correlation">
+        <div>
+          <h2>Multiple Correlation</h2>
+          <p>
+           Returns a summary of a dataset with information like Mean, Median, Standard Deviation, Skewness and so on.
+          </p>
+        </div>
+
+        <div>
+          <h3>Sample Usage </h3>
+          <p class="codeParagraphstyle">
+            <code>MultipleCorrelation(B2:G42,1)</code>
+            <code>or</code>
+            <code>MultipleCorrelation(B2:G42,A2)</code>
+          </p>
+        </div>
+         <div>
+          <h3>Syntax</h3>
+          <p><code>MultipleCorrelation(data)</code></p>
+          <hr>
+          
+ <div>
+            <code>data -(Numbers):</code>
+            <p>
+            The range of cells to perform the calculations on.
+              </p>
+          </div>
+          
+<div>
+            <code>header - (Boolean):</code> <span>[OPTIONAL]</span>
+            <p>
+              To confirm if there is a header row type 1. If omitted, the value is guessed based on the content of data.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Examples <a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank"><span class="material-symbols-outlined">
+open_in_new
+</span></a></h3>
+  <p>
+   For more comprehensive examples with data checkout out our<a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank">Documentation</a>
+  </p>
+        </div>
+      </div>
+
+
+      <!-- End of Multiple Correlation custom function documentation. -->
+
+
+    
+
+
+
+     <!-- Multiple Linear Regression custom function documentation. -->
+
+      <div class="hide" id="Multiple Linear Regression">
+        <div>
+          <h2>Multiple Linear Regression</h2>
+          <p>
+           Returns a summary of a dataset with information like Mean, Median, Standard Deviation, Skewness and so on.
+          </p>
+        </div>
+
+        <div>
+          <h3>Sample Usage </h3>
+          <p class="codeParagraphstyle">
+            <code>MultipleLinearRegression(B2:G42,1)</code>
+            <code>or</code>
+            <code>MultipleLinearRegression(B2:G42,A2)</code>
+          </p>
+        </div>
+         <div>
+          <h3>Syntax</h3>
+          <p><code>MultipleLinearRegression(data,col,[header])</code></p>
+          <hr>
+          
+ <div>
+            <code>data -(Numbers):</code>
+            <p>
+            The range of cells to perform the calculations on.
+              </p>
+          </div>
+          
+ <div>
+            <code>col - (Number)</code>
+            <p>
+            
+              </p>
+          </div>
+          
+<div>
+            <code>header - (Boolean):</code> <span>[OPTIONAL]</span>
+            <p>
+              To confirm if there is a header row type 1. If omitted, the value is guessed based on the content of data.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Examples <a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank"><span class="material-symbols-outlined">
+open_in_new
+</span></a></h3>
+  <p>
+   For more comprehensive examples with data checkout out our<a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank">Documentation</a>
+  </p>
+        </div>
+      </div>
+
+
+      <!-- End of Multiple Linear Regression custom function documentation. -->
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+
+
+Replacement Starts From Here
+
+
+ -->
+
+
+    </div>
+    <!-- End of Details Page View -->
+  </div>
+  <!-- Next Pages -->
+  <script>
+    let pageList = {
+        'homepage':1,
+        'nextpage':0,
+        'listpage':0,
+        'detailspage':0,
+      }
+
+      function showCurrentPage(pages){
+        let arrayPages = Object.entries(pages)
+        arrayPages.forEach(page => {
+          if(page[1] == 1){
+            document.getElementById(page[0]).classList.remove("hide");
+          }else{
+            document.getElementById(page[0]).classList.add("hide");
+          }
+        });
+      }
+      
+      function showFunctionList() {
+        pageList = {
+        'homepage':0,
+        'nextpage':1,
+        'listpage':1,
+        'detailspage':0,
+      }
+        showCurrentPage(pageList)
+      }
+
+      function goBack(){
+
+        if(pageList['nextpage'] === 1 && pageList['listpage'] === 1){
+          pageList = {
+        'homepage':1,
+        'nextpage':0,
+        'listpage':0,
+        'detailspage':0,
+      }
+      showCurrentPage(pageList)
+        return
+        }
+
+        if(pageList['nextpage'] === 1 && pageList['detailspage'] === 1){
+          pageList = {
+        'homepage':0,
+        'nextpage':1,
+        'listpage':1,
+        'detailspage':0,
+      }
+      showCurrentPage(pageList)
+        return
+        }
+
+      }
+let FunctionList = document.querySelectorAll("#List > li > div");
+
+function filterList() {
+
+       pageList = {
+        'homepage':0,
+        'nextpage':1,
+        'listpage':1,
+        'detailspage':0,
+      }
+        showCurrentPage(pageList)
+        
+  let input, filter, ul, li, div, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  console.log(filter)
+  ul = document.getElementById("List");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+        div = li[i].getElementsByTagName("div")[0];
+        txtValue = div.textContent || div.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+    } else {
+        li[i].style.display = "none";
+    }
+  }
+FunctionList = document.querySelectorAll("#List > li > div");
+}
+
+      FunctionList.forEach((functionItem) => {
+        functionItem.addEventListener("click", function () {
+            pageList = {
+        'homepage':0,
+        'nextpage':1,
+        'listpage':0,
+        'detailspage':1,
+      }
+      showCurrentPage(pageList)
+          document.querySelector("input").value = ""
+          document.querySelector(".currentFunction").classList.add("hide")
+          document.querySelector(".currentFunction").classList.remove("currentFunction")
+          
+          
+          let functionID = functionItem.innerHTML
+          document.getElementById(functionID).classList.add("currentFunction")
+          document.getElementById(functionID).classList.remove("hide")
+        });
+      });
+
+  </script>
+</body>
+<footer>
+  <a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank">Documentation</a>
+  <a href="https://www.youtube.com/channel/UCLv185U8QYcsojF5MIro4VA" target="_blank">How To Video</a>
+  <a href="https://www.limitz.app/" target="_blank">Website</a>
+  <a href="https://www.limitz.app/support" target="_blank">Support</a>
+</footer>
+
+</html>
