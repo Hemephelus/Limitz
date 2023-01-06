@@ -48,7 +48,7 @@ function onOpen() {
  */
 function showDocumentation_() {
   'use strict';
-  var html = HtmlService.createHtmlOutputFromFile('Doc')
+  var html = HtmlService.createHtmlOutputFromFile('Documentation')
       .setSandboxMode(HtmlService.SandboxMode.IFRAME)
       .setTitle('Documentation')
       .setWidth(300);

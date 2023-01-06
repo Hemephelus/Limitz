@@ -1,4 +1,13 @@
-function Correlation() {
+/**
+ * Returns the correlation between multiple variables.
+ * 
+ * @param {A1:C51} Array The range of cells to calculate.
+ *
+ * @return the correlation between multiple variables.
+ * @customfunction
+ */
+
+function MultipleCorrelation(DataSet) {
   let AllCorrelations = []
   let SomeCorrel = []
   let Correl;
@@ -35,7 +44,7 @@ function Correlation() {
   AllCorrelations.push(SomeCorrel)
  SomeCorrel = []
   }
-  Logger.log(AllCorrelations)
+  return AllCorrelations
 }
 
 

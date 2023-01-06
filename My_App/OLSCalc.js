@@ -1,22 +1,17 @@
-function tests() {
-  Logger.log(CoefficientOfIndependent_Var(DataSet, 2))
-}
-
-
-
 /**
- * Returns the coefficients of a the independent vairables.
+ * Returns the coefficients of all the independent variables.
  * 
  * @param {A1:C51} Array The range of cells
  *     to calculate.
- * @param {A1 or 1} Depdt_Var_Col_Num The value or cell
+ * @param {1} Depdt_Var_Col_Num The value or cell
  *     that would be the dependent variable.
  *
- * @return The coefficients of a the independent vairables.
+ * @return the coefficients of a the independent variables.
  * @customfunction
  */
 
-function CoefficientOfIndependent_Var(Array, Depdt_Var_Col_Num) {
+
+function MULTREG(Array, Depdt_Var_Col_Num) {
   let arrayColumnY = (Array, Depdt_Var_Col_Num) => Array.map(x => x[Depdt_Var_Col_Num]);
   let TempDeIndpt_Var = arrayColumnY(Array, Depdt_Var_Col_Num)
   let DependentVariable = Transpose_RowToCol([TempDeIndpt_Var])
@@ -115,7 +110,6 @@ function IdentityMetrics(nByn) {
     RowArray = []
 
   }
-console.log(MainArray)
   return MainArray
 
 }
@@ -225,22 +219,3 @@ function inverse(_A) {
   return _A;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
