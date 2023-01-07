@@ -1,11 +1,20 @@
 # Understanding the Documentation
 
-Every Function will have the section in their documentation.
+Every function will have these sections in their documentation.
 
 1. Documentation on how to use the function.
-2. Explanation of function
-3. Examples of how to use the function.
-4. The Maths behind the function.
-5. The implementation of the function (Source Code).
+   1. Description of the function
+   2. Sample Usage
+   3. Syntax
+   4. Examples of how to use the function.
+2. The Maths behind the function.
+   1. Formula
+   2. Video link (if any)
+   3. Step By Step working(if any)
+3. The implementation of the function (Source Code).
+   1. Code break down on a high level
 
-## Current Functions that we have.
+## Available Functions.
+1. [Descriptive Statistics]()
+2. [Multiple Correlation]()
+3. [Multiple Regression]()
