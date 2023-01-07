@@ -1,5 +1,5 @@
 /**
- * Returns a statistical summary of multiple variables at once.
+ * Returns a statistical summary of multiple variables at once.==
  * 
  * @param {A1:C51} DataSet The range of cells to calculate.
  * @param {1} HeaderRow confirm if there is a header row by typing 1.
