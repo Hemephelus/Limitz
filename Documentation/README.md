@@ -15,6 +15,6 @@ Every function will have these sections in their documentation.
    1. Code break down on a high level
 
 ## Available Functions.
-1. [Descriptive Statistics]()
+1. [Descriptive Statistics](https://github.com/Hemephelus/Limitz/blob/main/Documentation/Descriptive_Statistics.md)
 2. [Multiple Correlation]()
 3. [Multiple Regression]()
