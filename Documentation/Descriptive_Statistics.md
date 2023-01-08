@@ -1,7 +1,7 @@
 1. ## Documentation on how to use the function.
    1. ### Description of the function
    
-      Descriptive statistics helps to make sense of large amounts of data and to identify patterns, trends, and relationships in the data. It is a useful tool for understanding data and for making informed decisions based on that understanding. Some common types of descriptive statistics include measures of central tendency (such as mean, median, and mode), measures of dispersion (such as range, variance, and standard deviation).
+      **Descriptive statistics** helps to make sense of large amounts of data and to identify patterns, trends, and relationships in the data. It is a useful tool for understanding data and for making informed decisions based on that understanding. Some common types of descriptive statistics include measures of central tendency (such as mean, median, and mode), measures of dispersion (such as range, variance, and standard deviation).
 
    2. ### Return Value:
 

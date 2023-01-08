@@ -16,5 +16,5 @@ Every function will have these sections in their documentation.
 
 ## Available Functions.
 1. [Descriptive Statistics](https://github.com/Hemephelus/Limitz/blob/main/Documentation/Descriptive_Statistics.md)
-2. [Multiple Correlation]()
-3. [Multiple Regression]()
+2. [Multiple Correlation](https://github.com/Hemephelus/Limitz/blob/main/Documentation/Multiple_Correlation.md)
+3. [Multiple Regression](https://github.com/Hemephelus/Limitz/blob/main/Documentation/Multiple_Regression.md)
