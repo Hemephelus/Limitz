@@ -250,21 +250,21 @@ End Replacement Starts From Here
         <div>
           <h2>Descriptive Statistics</h2>
           <p>
-            Returns a summary of a dataset with information like Mean, Median, Standard Deviation, Skewness and so on.
+            Returns a summary of computed values using these calculations:
+
+            Mean, Sum, Minimum, Maximum, Observation, Median,Standard Deviation, Skewness, Kurtosis and Sum of Squares.
           </p>
         </div>
 
         <div>
           <h3>Sample Usage </h3>
           <p class="codeParagraphstyle">
-            <code>DescriptiveStatistics(B2:G42,1)</code>
-            <code>or</code>
-            <code>DescriptiveStatistics(B2:G42,A2)</code>
+            <code>DescriptiveStatistics(B2:G42, 1 or A2)</code>
           </p>
         </div>
         <div>
           <h3>Syntax</h3>
-          <p><code>DescriptiveStatistics(data,[header])</code></p>
+          <p><code>DescriptiveStatistics(data, header)</code></p>
           <hr>
 
           <div>
@@ -275,9 +275,9 @@ End Replacement Starts From Here
           </div>
 
           <div>
-            <code>header - (Boolean):</code> <span>[OPTIONAL]</span>
+            <code>header - (Boolean):</code>
             <p>
-              To confirm if there is a header row type 1. If omitted, the value is guessed based on the content of data.
+              To confirm if there is a header row type "1". If not type "0".
             </p>
           </div>
         </div>
@@ -340,15 +340,13 @@ Replacement Starts From Here
         <div>
           <h2>Multiple Correlation</h2>
           <p>
-           Returns level of Correlation each variable has against each other.
+           Returns a 2D array of computed values of multiple correlation coefficient (R). each value shows the level of correlation each one has with each other.
           </p>
         </div>
 
         <div>
           <h3>Sample Usage </h3>
           <p class="codeParagraphstyle">
-            <code>MultipleCorrelation(B2:G42)</code>
-            <code>or</code>
             <code>MultipleCorrelation(B2:G42)</code>
           </p>
         </div>
@@ -396,21 +394,20 @@ open_in_new
         <div>
           <h2>Multiple Linear Regression</h2>
           <p>
-           Returns the coefficients of independent variables in the data set.
+           Returns a 2D array of computed values of the unique contribution of each predictor (independent variable) to the outcome (dependent variable).
           </p>
         </div>
 
         <div>
           <h3>Sample Usage </h3>
           <p class="codeParagraphstyle">
-            <code>MultipleLinearRegression(B2:G42,1)</code>
-            <code>or</code>
-            <code>MultipleLinearRegression(B2:G42,A2)</code>
+            <code>MultipleLinearRegression(B2:G42,1 or A2)</code>
+
           </p>
         </div>
          <div>
           <h3>Syntax</h3>
-          <p><code>MultipleLinearRegression(data,col,[header])</code></p>
+          <p><code>MultipleLinearRegression(data, dependent_variable)</code></p>
           <hr>
           
  <div>
@@ -596,8 +593,8 @@ FunctionList = document.querySelectorAll("#List > li > div");
   </script>
 </body>
 <footer>
-  <!-- <a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank">Documentation</a> -->
-  <a href="https://www.youtube.com/channel/UCLv185U8QYcsojF5MIro4VA" target="_blank">How To Video</a>
+  <a href="https://github.com/Hemephelus/Limitz/tree/main/Documentation" target="_blank">Documentation</a>
+  <!-- <a href="https://www.youtube.com/channel/UCLv185U8QYcsojF5MIro4VA" target="_blank">How To Video</a> -->
   <a href="https://www.limitz.app/" target="_blank">Website</a>
   <a href="https://www.limitz.app/support" target="_blank">Support</a>
 </footer>

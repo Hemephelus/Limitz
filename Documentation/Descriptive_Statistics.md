@@ -25,11 +25,5 @@
 
       To confirm if there is a header row type "1". If not type "0".
 
-   5. ### See how i used this function in this [Google Sheet](https://docs.google.com/spreadsheets/d/1ds9bimx0rHalfnA6j87Ck35PiBBMwNwNQZ38pOaJYTE/view#gid=831143355).
-2. The Maths behind the function.
-   1. Formula
-   2. Video link (if any)
-   3. Step By Step working(if any)
-3. The implementation of the function (Source Code).
-   1. Code break down on a high level
+   5. ### See how I used this function in [Google Sheet](https://docs.google.com/spreadsheets/d/1ds9bimx0rHalfnA6j87Ck35PiBBMwNwNQZ38pOaJYTE/view#gid=831143355).
 
